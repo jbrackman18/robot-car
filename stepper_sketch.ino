@@ -2,9 +2,9 @@
 
 
 const int stepsPerRev = 2048; // total steps per revolution
-const int rpm = 12; // top speed for the stepper motors; any higher causes a stall
-Stepper leftWheel (stepsPerRev, 4, 5, 6, 7);
-Stepper rightWheel (stepsPerRev, A0, A1, A2, A3);
+const int rpm = 10; // top speed for the stepper motors; any higher causes a stall
+Stepper leftWheel (stepsPerRev, 4, 6, 5, 7);
+Stepper rightWheel (stepsPerRev, A0, A2, A1, A3);
 
 void setup() {
   leftWheel.setSpeed(rpm);
